@@ -7,7 +7,53 @@
     <title>My App</title>
   </head>
   <body>
-    <h1 class="text-4xl text-blue-700">Template</h1>
+    <div id="content">
+      <div>
+        <div>
+          <form action="" id="form">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="mail" required />
+          <span id="error-message" class="bg-red-500"></span>
+        </div>
+        <div>
+          <label for="country">Country:</label>
+          <input type="text" name="country" id="country" required />
+          <span id="error-country" class="bg-red-500"></span>
+        </div>
+        <div>
+          <label for="zipcode">Zipcode:</label>
+          <input type="text" name="zipcode" id="zipcode" required />
+          <span id="error-zip" class="bg-red-500"></span>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            minlength="6"
+          />
+          <span id="error-password" class="bg-red-500"></span>
+        </div>
+        <div>
+          <label for="passwordc">Password Confirmation:</label>
+          <input
+            type="password"
+            name="passwordc"
+            id="passwordc"
+            required
+            minlength="6"
+          />
+          <span id="error-passwordc" class="bg-red-500"></span>
+        </div>
+        <div>
+          <span id="error" class="bg-red-500"></span>
+          <input type="submit" name="submit" id="" class="cursor-pointer" />
+        </div>
+      </form>
+      </div>
+    </div>
     <script src="bundle.js"></script>
   </body>
 </html>
